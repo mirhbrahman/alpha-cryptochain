@@ -9,6 +9,9 @@
     "dev": "nodemon index.js",
     "dev-peer": "cross-env GENERATE_PEER_PORT='true' nodemon index.js"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,11 +21,13 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "elliptic": "^6.5.0",
     "express": "^4.17.1",
     "hex-to-binary": "^1.0.1",
     "nodemon": "^1.19.1",
     "pubnub": "^4.25.1",
     "radis": "^1.0.5",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "uuid": "^3.3.3"
   }
 }
